@@ -10,7 +10,7 @@ public class GeneratorController {
     private static final int CODE_SUCCESS = 200;
 
     @GetMapping
-    public BaseResponse generateBankAccount() {
-        return new BaseResponse(SUCCESS_STATUS, CODE_SUCCESS);
+    public BankAccount generateBankAccount() {
+        return BankAccountGenerator.getRandomBankAccount();
     }
 }

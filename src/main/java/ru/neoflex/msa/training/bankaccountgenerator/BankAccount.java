@@ -9,6 +9,13 @@ public class BankAccount {
     private String patronymic;
     private long accountNumber;
 
+    public BankAccount(UUID uuid, String firstName, String lastName, String patronymic) {
+        this.uuid = uuid;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.patronymic = patronymic;
+    }
+
     public UUID getUuid() {
         return uuid;
     }
