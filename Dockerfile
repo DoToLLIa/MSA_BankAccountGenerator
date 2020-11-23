@@ -1,5 +1,5 @@
-FROM maven:3.6.3-jdk-8
-ARG PROJECT_VERSION=0.1
+FROM dotollia/msa_basedockerimage:0.2
+ARG PROJECT_VERSION=0.2
 RUN mkdir /MSA_BankAccountGenerator
 COPY . /MSA_BankAccountGenerator
 RUN cd /MSA_BankAccountGenerator && \
